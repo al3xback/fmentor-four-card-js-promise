@@ -26,4 +26,6 @@ Promise.resolve()
 		body.appendChild(mainEl);
 		body.appendChild(footerEl);
 	})
-	.catch((err) => console.log(err));
+	.catch((err) => {
+		console.log(err);
+	});

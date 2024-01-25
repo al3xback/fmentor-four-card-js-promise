@@ -62,13 +62,13 @@ const createSectionEl = () => {
 				'cards-summary__subtitle'
 			);
 
-			const sectionHeadSubtitleTextEl = createElement(
+			const cardsSummarySubtitleTextEl = createElement(
 				'strong',
 				null,
 				'Powered by Technology'
 			);
 
-			cardsSummarySubtitleEl.appendChild(sectionHeadSubtitleTextEl);
+			cardsSummarySubtitleEl.appendChild(cardsSummarySubtitleTextEl);
 
 			const cardsSummaryDescEl = createElement(
 				'p',

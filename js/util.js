@@ -51,24 +51,26 @@ const createSectionEl = () => {
 			/* section head */
 			const sectionHeadEl = createElement('div', 'section__head');
 
-			const cardsSummaryTitleEl = createElement(
-				'h2',
-				'cards-summary__title',
-				'Reliable, efficient delivery'
-			);
+			const cardsSummaryEl = createElement('div', 'cards-summary');
 
 			const cardsSummarySubtitleEl = createElement(
 				'p',
-				'cards-summary__subtitle'
+				'cards-summary__subtitle',
+				'Reliable, efficient delivery'
 			);
 
-			const cardsSummarySubtitleTextEl = createElement(
+			const cardsSummaryTitleEl = createElement(
+				'h2',
+				'cards-summary__title'
+			);
+
+			const cardsSummaryTitleTextEl = createElement(
 				'strong',
 				null,
 				'Powered by Technology'
 			);
 
-			cardsSummarySubtitleEl.appendChild(cardsSummarySubtitleTextEl);
+			cardsSummaryTitleEl.appendChild(cardsSummaryTitleTextEl);
 
 			const cardsSummaryDescEl = createElement(
 				'p',
@@ -76,9 +78,11 @@ const createSectionEl = () => {
 				'Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful'
 			);
 
-			sectionHeadEl.appendChild(cardsSummaryTitleEl);
-			sectionHeadEl.appendChild(cardsSummarySubtitleEl);
-			sectionHeadEl.appendChild(cardsSummaryDescEl);
+			cardsSummaryEl.appendChild(cardsSummarySubtitleEl);
+			cardsSummaryEl.appendChild(cardsSummaryTitleEl);
+			cardsSummaryEl.appendChild(cardsSummaryDescEl);
+
+			sectionHeadEl.appendChild(cardsSummaryEl);
 
 			/* section body */
 			const sectionBodyEl = createElement('div', 'section__body');
